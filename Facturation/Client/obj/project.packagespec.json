@@ -1,0 +1,76 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Client/Facturation.Client.csproj",
+    "projectName": "Facturation.Client",
+    "projectPath": "/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Client/Facturation.Client.csproj",
+    "outputPath": "/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Client/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net50"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp5.0": {
+        "projectReferences": {
+          "/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/Facturation.Shared.csproj": {
+            "projectPath": "/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/Facturation.Shared.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp5.0": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Components.WebAssembly": {
+          "target": "Package",
+          "version": "[5.0.0, )"
+        },
+        "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[5.0.0, )"
+        },
+        "System.Net.Http.Json": {
+          "target": "Package",
+          "version": "[5.0.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "downloadDependencies": [
+        {
+          "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+          "version": "[5.0.0, 5.0.0]"
+        }
+      ],
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+    }
+  },
+  "runtimes": {
+    "browser-wasm": {
+      "#import": []
+    }
+  }
+}

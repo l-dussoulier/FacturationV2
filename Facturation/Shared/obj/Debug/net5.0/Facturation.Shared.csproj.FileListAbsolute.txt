@@ -1,0 +1,12 @@
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/bin/Debug/net5.0/Facturation.Shared.deps.json
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/bin/Debug/net5.0/Facturation.Shared.dll
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/bin/Debug/net5.0/ref/Facturation.Shared.dll
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/bin/Debug/net5.0/Facturation.Shared.pdb
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/Facturation.Shared.csprojAssemblyReference.cache
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/Facturation.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/Facturation.Shared.AssemblyInfoInputs.cache
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/Facturation.Shared.AssemblyInfo.cs
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/Facturation.Shared.csproj.CoreCompileInputs.cache
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/Facturation.Shared.dll
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/ref/Facturation.Shared.dll
+/Users/louis/Documents/Ecole/DEV/C#/FacturationNew/Facturation/Shared/obj/Debug/net5.0/Facturation.Shared.pdb

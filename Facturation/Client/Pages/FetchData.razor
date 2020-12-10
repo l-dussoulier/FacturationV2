@@ -1,0 +1,97 @@
+﻿@page "/fetchdata"
+
+@using Facturation.Shared
+
+@inject HttpClient http
+
+<style>
+    table > tfoot > tr {
+        background-color: #c9efff;
+        border-top: 1px solid #4eacd4 !important;
+    }
+
+        table > tfoot > tr > td {
+            text-align: right;
+            font-weight: bold;
+        }
+</style>
+
+<h1>Factures</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Client</th>
+            <th>Numéro</th>
+            <th>Date Emission</th>
+            <th>Date Réglement</th>
+            <th>Montant Dû</th>
+            <th>Montant Réglé</th>
+            <th>Reste à recevoir</th>
+        </tr>
+        </thead>
+        <tbody>
+        @{
+            float totalDu = 0;
+            float totalRegle = 0;
+            float totalReste = 0;
+        }
+        @foreach (var facture in lesFactures)
+        {
+            <tr>
+                <td>
+                    @facture.Client
+                </td>
+                <td>
+                    @facture.Numero
+                </td>
+                <td>
+                    @facture.DateEmission
+                </td>
+                <td>
+                    @facture.DateReglement
+                </td>
+                <td style="text-align: right">
+                    @facture.MontantDu
+                </td>
+                <td style="text-align: right">
+                    @facture.MontantRegle
+                </td>
+                <td style="text-align: right">
+                    @facture.ResteARecevoir
+                </td>
+            </tr>
+
+            totalDu += facture.MontantDu;
+            totalRegle += facture.MontantRegle;
+            totalReste += facture.ResteARecevoir;
+
+        }
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4"></td>
+            <td>
+                @totalDu
+            </td>
+            <td>
+                @totalRegle
+            </td>
+            <td>
+                @totalReste
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+
+
+@{
+
+        private IEnumerable<Facture> lesFactures = null;
+        
+        protected override async Task OnInitializedAsync()
+        {
+            lesFactures = await http.GetFromJsonAsync<IEnumerable<Facture>>("api/facture");
+        }
+        
+}
